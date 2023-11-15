@@ -12,7 +12,7 @@ import trello from "../assets/images/Trello-logo-blue 1.png";
 const Home = () => {
   return (
     <>
-      <div className="bg-[#D7F5DC]">
+      <div className="bg-[#D7F5DC] h-[800px]">
         <div className="grid grid-cols-2 mx-6 pb-12 pt-6">
           <section>
             <h1 className="text-[50px] font-bold mx-6 p-4">
@@ -38,10 +38,8 @@ const Home = () => {
             </div>
           </section>
         </div>
-      </div>
-
-      <div className="py-8">
-        <section className="flex flex-row items-center justify-center gap-6">
+        <div className="py-8 bg-white my-6 h-24">
+        <section className="flex  items-center justify-around gap-6">
           <img src={google} />
           <img src={trello} />
           <img src={monday} />
@@ -49,6 +47,9 @@ const Home = () => {
           <img src={slack} />
         </section>
       </div>
+      </div>
+
+      
     </>
   );
 };
